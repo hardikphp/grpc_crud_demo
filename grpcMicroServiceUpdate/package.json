@@ -1,0 +1,30 @@
+{
+  "name": "grpcmicroservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node",
+    "dev": "nodemon index.js --exec babel-node",
+    "migrate": "--name=$FILE  nodemon --exec babel-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.2.6",
+    "@grpc/proto-loader": "^0.5.6",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "grpc": "^1.24.4",
+    "mongoose": "^5.11.15",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "nodemon": "^2.0.6"
+  }
+}
